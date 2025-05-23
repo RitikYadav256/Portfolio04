@@ -28,7 +28,7 @@ const Comment = ({ comments: initialComments = [], postId }) => {
 
     setLoading(true);
     try {
-      const res = await fetch('http://localhost:5001/Portfolio/Post/Comment', {
+      const res = await fetch('https://portfolio-backend-v0hd.onrender.com/Portfolio/Post/Comment', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
