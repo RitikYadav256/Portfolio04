@@ -1,0 +1,271 @@
+.main_container {
+  margin: 76px auto 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  max-width: 700px;
+  padding: 0 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 2px 2px 2px rgb(109, 108, 108);
+}
+
+/* Fixed top heading box */
+.heading {
+  width: 46%;
+  position: fixed;
+  top: 76px;
+  left: 27%;
+  right: 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 2px 2px 2px rgb(159, 159, 159);
+  gap: 15px;
+}
+
+/* Text in heading */
+.details {
+  color: #404040;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+/* Post and video buttons */
+.post_button {
+  display: flex;
+  gap: 12px;
+}
+
+.disc{
+  font-style:var(#0a66c2);
+}
+
+.button1 {
+  flex: 1;
+  padding: 10px;
+  background-color: #eef3f8;
+  color: #0a66c2;
+  border: 1px solid #d0d0d0;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.button1:hover {
+  background-color: #d7e6f7;
+}
+
+/* Main post container */
+.card_container {
+  background-color: #ffffff;
+  width: 100%;
+  margin-top: 154px;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  border: 1px solid #e0e0e0;
+}
+
+/* Post title */
+.post_heading {
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 15px;
+  text-align: left;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+.card{
+  border: 3px solid black;
+  border-radius: 3px;
+  padding: 5px;
+}
+.disc{
+  color: black;
+  text-align: left;
+}
+
+/* Image section */
+.post {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* Like/share buttons */
+.connect {
+  display: flex;
+  justify-content: space-around;
+  border-top: 1px solid #ccc;
+  padding-top: 10px;
+}
+
+ .share {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+
+
+.share, .comment {
+  color: #0a66c2;
+  width: 40px;
+  padding: 6px;
+  transition: all 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+.share:hover,
+.comment:hover {
+  background-color: #f3f2ef;
+  border: 1px solid rgb(1, 34, 45);
+  border-radius: 6px;
+}
+
+/* Optional: if you really want different width on hover for comment */
+.comment:hover {
+  width: 30px; /* But this might look odd – avoid if unnecessary */
+}
+
+.loaderContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  margin-top: 200px;
+}
+
+.loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+/* For tablets: 768px and below */
+@media (max-width: 768px) {
+  .heading {
+    width: 90%;
+    left: 5%;
+    padding: 15px;
+  }
+
+  .details {
+    font-size: 15px;
+  }
+
+  .button1 {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .card_container {
+    margin-top: 220px;
+    padding: 15px;
+  }
+
+  .post_heading {
+    font-size: 15px;
+  }
+
+  .comment input {
+    font-size: 13px;
+    padding: 8px 12px;
+  }
+}
+
+/* For mobile devices: 480px and below */
+@media (max-width: 480px) {
+  .main_container {
+    padding: 0 10px;
+  }
+
+  .heading {
+    width: 90%;
+    left: 5%;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .details {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .post_button {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .button1 {
+    width: 100%;
+    padding: 8px;
+    font-size: 13px;
+  }
+
+  .card_container {
+    padding: 12px;
+    margin-top: 170px;
+  }
+
+  .post_heading {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .img {
+    max-height: 250px;
+  }
+
+  .like, .share,.comment {
+    font-size: 13px;
+    padding: 8px;
+  }
+
+  .comment input {
+    font-size: 12px;
+    padding: 7px 10px;
+  }
+}

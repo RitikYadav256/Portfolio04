@@ -1,0 +1,130 @@
+.footer {
+  color: #eee;
+  padding: 40px 20px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 40px;
+}
+
+.branding {
+  flex: 1 1 220px;
+}
+
+.branding h2 {
+  font-size: 28px;
+  margin-bottom: 8px;
+  color: #fff;
+}
+
+.branding p {
+  font-size: 16px;
+  color: #ccc;
+  max-width: 250px;
+}
+
+.navLinks {
+  flex: 1 1 180px;
+}
+
+.navLinks h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.navLinks ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navLinks ul li {
+  margin-bottom: 10px;
+}
+
+.navLinks ul li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 15px;
+  transition: color 0.3s ease;
+}
+
+.navLinks ul li a:hover {
+  color: #1abc9c;
+}
+
+.contactInfo {
+  flex: 1 1 220px;
+}
+
+.contactInfo h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.contactInfo p {
+  font-size: 14px;
+  margin-bottom: 8px;
+  color: #ddd;
+}
+
+.social {
+  flex: 1 1 180px;
+}
+
+.social h3 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #fff;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 16px;
+}
+
+.socialIcons a {
+  color: #ddd;
+  font-size: 24px;
+  transition: color 0.3s ease;
+}
+
+.socialIcons a:hover {
+  color: #1abc9c;
+  transform: scale(1.1);
+}
+
+.copy {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 13px;
+  color: #aaa;
+  border-top: 1px solid #444;
+  padding-top: 10px;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .branding, .navLinks, .contactInfo, .social {
+    flex: 1 1 100%;
+    text-align: center;
+  }
+
+  .socialIcons {
+    justify-content: center;
+  }
+}

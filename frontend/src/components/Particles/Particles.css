@@ -1,0 +1,15 @@
+/*
+	Installed from https://reactbits.dev/default/
+*/
+
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 300vh;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+  background-color: #000000; /* Replace with any color you like */
+}
