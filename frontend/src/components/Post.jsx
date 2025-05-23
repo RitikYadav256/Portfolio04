@@ -18,7 +18,7 @@ export function Post() {
   const FetchPost = async () => {
     setLoading(true);
     try {
-      const res = await fetch("http://localhost:5001/Portfolio/Post");
+      const res = await fetch("https://portfolio-backend-v0hd.onrender.com/Portfolio/Post");
       if (!res.ok) {
         console.log("Database not responding");
         return;
