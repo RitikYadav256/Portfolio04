@@ -19,7 +19,7 @@ export function AddPost() {
     formData.append("image", file);
 
     try {
-      const response = await fetch("http://localhost:5001/Portfolio/Post", {
+      const response = await fetch("https://portfolio-backend-v0hd.onrender.com/Portfolio/Post", {
         method: "POST",
         body: formData,
       });
