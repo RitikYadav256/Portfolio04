@@ -285,19 +285,19 @@ const coding = [
     _id: "ritikyadav123456",
     prof: pro_pic,
     link: "https://leetcode.com/u/ritikyadav123456/",
-    total: "118",
-    easy:46,
-    medium:61,
-    hard:11
+    total: "200+",
+    easy:76,
+    medium:101,
+    hard:30
   },
   {
     logo: Hackerrank,
     _id: "hritikyadav256",
     prof: pro_pic,
     link: "https://www.hackerrank.com/profile/hritikyadav256",
-    total: "88",
+    total: "100",
     easy:"20",
-    medium:"45",
+    medium:"65",
     hard:"23"
   },
   {
