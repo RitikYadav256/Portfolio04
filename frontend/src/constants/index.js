@@ -128,21 +128,6 @@ const technologies = [
 
 const experiences = [
   {
-  title: "Guest.io",
-  company_name: "Hospitality Management Platform",
-  icon: starbucks, // replace with your project icon if needed
-  proj: GuestIO,
-  iconBg: "#1F2937",
-  date: "Oct 2025 - Dec 2025",
-  points: [
-    "Developed and maintained a guest management web application using React.js, Node.js, Express.js, and MongoDB.",
-    "Implemented user authentication, guest registration, and booking management features for seamless user experience.",
-    "Built RESTful APIs using Express.js and Node.js to handle guest data, reservations, and backend logic.",
-    "Integrated MongoDB Atlas for secure and scalable data storage with efficient CRUD operations.",
-    "Designed responsive and user-friendly interfaces using Bootstrap, CSS, and JavaScript for cross-device compatibility."
-  ],
-},
-  {
     title: "OldSchoolGame",
     company_name: "Gaming plateform",
     icon: starbucks,
