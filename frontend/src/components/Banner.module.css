@@ -1,0 +1,187 @@
+/* Main Container */
+.main_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+  margin: 100px 10%;
+  height: 80vh;
+  color: white;
+  border: 1px solid white;
+  border-radius: 5px;
+  box-shadow: 2px 1px 1px rgb(43, 42, 42);
+  z-index: 1001;
+}
+
+/* Left Content Section */
+.container1 {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  max-width: 50%;
+  margin-left: 3%;
+}
+
+/* Horizontal Title Line */
+.div1 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.hr1 {
+  width: 80px;
+  border: none;
+  border-top: 2px solid rgb(255, 74, 3);
+  transform: rotate(180deg);
+}
+
+.div1_h1 {
+  color: rgb(255, 74, 3);
+  font-size: 20px;
+  margin: 0;
+}
+
+/* Headline Section */
+.div2 {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+
+p {
+  color: white;
+  font-weight: bold;
+  margin: 0 10px 0 0;
+  font-size: 30px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', sans-serif;
+}
+
+.div2_h1 {
+  color: rgb(255, 74, 3);
+  font-size: 36px;
+  margin: 0;
+}
+
+/* Subheading Section */
+.div3 {
+  display: flex;
+  align-items: center;
+  padding: 1px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+.div3_h1 {
+  margin-right: 20px;
+  font-size: 22px;
+  color: white;
+}
+
+/* Paragraph/Description */
+.div4 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 10px;
+  width: 90%;
+  font-size: 14px;
+  color: #cccccc;
+  line-height: 1.5;
+}
+
+/* Icon/Contact Section */
+.div5 {
+  display: flex;
+  margin-top: 20px;
+  gap: 1.5rem;
+  font-size: 28px;
+  color: white;
+}
+
+.div5 svg {
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.div5 svg:hover {
+  color: rgb(255, 74, 3);
+}
+
+/* Button Section */
+.div6 {
+  margin-top: 30px;
+}
+
+.div6 button {
+  padding: 10px 20px;
+  background-color: rgb(255, 74, 3);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.div6 button:hover {
+  background-color: rgb(200, 50, 0);
+}
+
+/* Right Content Section (Image) */
+.container2 {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img1 {
+  width: 350px;
+  height: auto;
+  border-radius: 50%;
+  box-shadow:
+    0 4px 8px rgba(248, 142, 3, 0.3),
+    0 8px 16px rgba(237, 245, 3, 0.2),
+    0 12px 24px rgba(254, 97, 0, 0.1);
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+  .main_container {
+    flex-direction: column;
+    padding: 5% 3%;
+    margin: 80px 5%;
+    height: auto;
+    text-align: center;
+  }
+
+  .container1,
+  .container2 {
+    max-width: 100%;
+    margin: 0;
+  }
+
+  .div1,
+  .div2,
+  .div3,
+  .div5,
+  .div6 {
+    justify-content: center;
+  }
+
+  .div3 {
+    margin-left: 0;
+  }
+
+  .div4 {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .img1 {
+    width: 250px;
+    margin-top: 2rem;
+    border-radius: 50%;
+  }
+}

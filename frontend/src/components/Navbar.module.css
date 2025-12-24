@@ -1,0 +1,126 @@
+/* Navbar Styles */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1020;
+  color: wheat;
+  background-color: rgb(12, 12, 31);
+  padding: 1.25rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbarContainer {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-bottom: 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 60px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.p1 {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  display: block;
+}
+
+/* Mobile Menu Button */
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Menu Styles */
+.headerMenu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headerMenu ul li {
+  list-style: none;
+  /* Remove default list styles */
+}
+
+.headerMenu ul li a {
+  text-decoration: none;
+  /* Remove underline from links */
+  color: white;
+  /* Set color (change as needed) */
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.headerMenu ul li a:hover {
+  color: lightgray;
+  /* Optional: Change color on hover */
+}
+
+.headerMenu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 15px;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .menuBtn {
+    display: block;
+    /* Show menu button on small screens */
+  }
+
+  .headerMenu {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 60px;
+    background-color: rgba(35, 35, 53, 0.9);
+    padding: 10px;
+    border-radius: 8px;
+    width: 100px;
+  }
+
+  .headerMenu.showMenu {
+    display: flex;
+    /* Show menu when toggled */
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .headerMenu ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .headerMenu ul li {
+    margin: 5px 0;
+  }
+
+  .p1 {
+    display: block;
+  }
+}

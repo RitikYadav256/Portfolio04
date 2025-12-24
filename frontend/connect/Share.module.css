@@ -1,0 +1,141 @@
+/* Share.module.css */
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.shareContainer {
+  padding: 1.5rem;
+  background: linear-gradient(to right, #4856e9, #8a88d1, #1a2cf4);
+
+  border-radius: 5px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  max-width: 90%;
+  width: 600px;
+  margin: 30vh auto 2rem auto;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: slideUp 0.6s ease forwards;
+  z-index: 1050;
+  position: fixed;
+}
+
+.heading {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+  font-weight: 600;
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.shareButton {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  color: #333;
+  padding: 0.6rem 1rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.Exit {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: black;
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 3px;
+  background-color: rgb(0, 0, 0);
+  padding: 2px;
+  cursor: pointer;
+}
+.Exit:hover {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: black;
+  border: 2px solid rgb(96, 96, 96);
+  border-radius: 3px;
+  background-color: rgb(74, 74, 74);
+  padding: 2px;
+  cursor: pointer;
+}
+.shareButton:hover {
+  background-color: #e9f5ff;
+  border-color: #0077b5;
+  color: #0077b5;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+/* Responsive Media Queries */
+
+/* For tablets and small laptops */
+@media (max-width: 768px) {
+  .shareContainer {
+    margin: 25vh auto;
+    width: 90%;
+    padding: 1rem;
+    height: 70vh;
+  }
+
+  .heading {
+    font-size: 1.6rem;
+  }
+
+  .shareButton {
+    padding: 0.5rem 0.8rem;
+    font-size: 0.95rem;
+  }
+
+  .icon {
+    font-size: 1rem;
+  }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+  .shareContainer {
+    margin: 15vh auto;
+    height: 50vh;
+    padding: 1rem;
+  }
+
+  .heading {
+    font-size: 1.4rem;
+  }
+
+  .buttonGroup {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .shareButton {
+    width: 100%;
+    justify-content: center;
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+}
