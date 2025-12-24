@@ -15,7 +15,7 @@ import SplashCursor from "./SplashCursor/SplashCursor";
 import Footer from "./components/Footer";
 function App() {
   return (
-    <BrowserRouter>
+    
       <div className={style.container}>
       <SplashCursor></SplashCursor>
         <Routes>
@@ -75,7 +75,6 @@ function App() {
             <><Navbar /><Feedback /></>} />
         </Routes>
       </div>
-    </BrowserRouter>
   );
 }
 
