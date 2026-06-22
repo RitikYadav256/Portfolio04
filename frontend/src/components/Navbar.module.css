@@ -1,0 +1,137 @@
+/* Navbar Styles */
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 1020;
+  background: rgba(5, 8, 22, 0.92);
+  backdrop-filter: blur(18px);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.navbarContainer {
+  width: 100%;
+  max-width: 1280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  width: 48px;
+  height: 48px;
+  object-fit: cover;
+  border-radius: 14px;
+  background: linear-gradient(135deg, #0f172a, #2563eb);
+  padding: 8px;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.brandTitle {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 0;
+  letter-spacing: 0.02em;
+}
+
+.brandSubtitle {
+  display: block;
+  font-size: 0.78rem;
+  color: #cbd5e1;
+}
+
+.menuBtn {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Menu Styles */
+.headerMenu {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.headerMenu ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 1.5rem;
+}
+
+.headerMenu ul li {
+  list-style: none;
+}
+
+.headerMenu ul li a {
+  text-decoration: none;
+  color: #dbeafe;
+  font-size: 0.95rem;
+  font-weight: 500;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+.headerMenu ul li a:hover,
+.headerMenu ul li a.activeLink {
+  color: #38bdf8;
+  transform: translateY(-1px);
+}
+
+.activeLink {
+  color: #38bdf8;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .menuBtn {
+    display: block;
+    /* Show menu button on small screens */
+  }
+
+  .headerMenu {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    top: 64px;
+    background-color: rgba(15, 23, 42, 0.98);
+    padding: 16px;
+    border-radius: 22px;
+    width: min(220px, calc(100vw - 2rem));
+    box-shadow: 0 28px 70px rgba(15, 23, 42, 0.35);
+  }
+
+  .headerMenu.showMenu {
+    display: flex;
+    /* Show menu when toggled */
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .headerMenu ul {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .headerMenu ul li {
+    margin: 5px 0;
+  }
+
+  .p1 {
+    display: block;
+  }
+}

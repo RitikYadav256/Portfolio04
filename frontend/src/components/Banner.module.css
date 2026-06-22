@@ -1,0 +1,229 @@
+/* Hero Section */
+.heroSection {
+  width: 100%;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 420px);
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+  padding: 180px 3rem 80px;
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  color: #f8fafc;
+}
+
+.heroLabel {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(56, 189, 248, 0.16);
+  color: #7dd3fc;
+  padding: 0.55rem 0.9rem;
+  border-radius: 999px;
+  letter-spacing: 0.08em;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.heroTitle {
+  font-size: clamp(2.8rem, 5vw, 4.4rem);
+  line-height: 1.02;
+  margin: 0;
+}
+
+.heroTitle span {
+  color: #38bdf8;
+}
+
+.heroSubtitle {
+  max-width: 680px;
+  color: #cbd5e1;
+  font-size: 1rem;
+  line-height: 1.9;
+}
+
+.badges {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.badges span {
+  background: rgba(255, 255, 255, 0.08);
+  color: #e2e8f0;
+  padding: 0.8rem 1rem;
+  border-radius: 999px;
+  font-size: 0.88rem;
+  border: 1px solid rgba(148, 163, 184, 0.18);
+}
+
+.ctaRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  border-radius: 999px;
+  font-weight: 700;
+  padding: 0.95rem 1.9rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primaryButton {
+  border: none;
+  color: #fff;
+  background: linear-gradient(135deg, #0ea5e9, #3b82f6);
+  box-shadow: 0 22px 40px rgba(56, 189, 248, 0.18);
+}
+
+.secondaryButton {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  color: #e2e8f0;
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  transform: translateY(-2px);
+}
+
+.highlightGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.highlightCard {
+  padding: 1.4rem 1.35rem;
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  box-shadow: 0 18px 45px rgba(15, 23, 42, 0.16);
+}
+
+.highlightCard h3 {
+  margin: 0 0 0.65rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.highlightCard p {
+  margin: 0;
+  color: #cbd5e1;
+  line-height: 1.7;
+}
+
+.statsGrid strong {
+  display: block;
+  font-size: 1.45rem;
+  color: #fff;
+}
+
+.statsGrid span {
+  display: block;
+  color: #cbd5e1;
+  margin-top: 0.45rem;
+  font-size: 0.95rem;
+}
+
+.heroVisual {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 440px;
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.95), rgba(15, 23, 42, 0.6));
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 30px;
+  padding: 1.8rem;
+  overflow: hidden;
+}
+
+.profileCard {
+  position: relative;
+  width: min(100%, 320px);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.6rem;
+  background: rgba(15, 23, 42, 0.95);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 24px;
+  box-shadow: 0 24px 60px rgba(15, 23, 42, 0.35);
+  z-index: 1;
+}
+
+.profileAvatar {
+  width: 90px;
+  height: 90px;
+  border-radius: 24px;
+  object-fit: cover;
+  border: 2px solid rgba(56, 189, 248, 0.45);
+}
+
+.profileName {
+  font-size: 1.15rem;
+  margin: 0;
+  color: #fff;
+}
+
+.profileRole {
+  margin: 0.35rem 0 0;
+  color: #94a3b8;
+  font-size: 0.95rem;
+}
+
+.contactLinks {
+  position: absolute;
+  left: 2rem;
+  bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+}
+
+.contactLinks a {
+  color: #cbd5e1;
+  text-decoration: none;
+}
+
+@media (max-width: 1024px) {
+  .heroSection {
+    grid-template-columns: 1fr;
+    padding: 100px 2rem 60px;
+  }
+
+  .heroVisual {
+    min-height: 420px;
+  }
+}
+
+@media (max-width: 640px) {
+  .heroSection {
+    gap: 1.5rem;
+    padding: 80px 1.5rem 40px;
+  }
+
+  .statsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .contactLinks {
+    left: 1rem;
+    right: 1rem;
+    bottom: 1rem;
+  }
+}

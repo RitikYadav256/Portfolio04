@@ -1,0 +1,89 @@
+.contactContainer {
+  width: 100%;
+  max-width: 1180px;
+  margin: 60px auto 100px;
+  padding: 2.5rem 2rem;
+  background: rgba(15, 23, 42, 0.96);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 28px;
+  box-shadow: 0 32px 80px rgba(15, 23, 42, 0.25);
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.subtitle {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.24em;
+  color: #38bdf8;
+  margin-bottom: 0.75rem;
+}
+
+.heading {
+  font-size: clamp(2rem, 2.5vw, 2.7rem);
+  color: #f8fafc;
+  max-width: 680px;
+  line-height: 1.1;
+  margin: 0;
+}
+
+.ctaLink {
+  color: #ffffff;
+  text-decoration: none;
+  background: linear-gradient(135deg, #0ea5e9, #2563eb);
+  padding: 0.95rem 1.5rem;
+  border-radius: 999px;
+  font-weight: 700;
+  box-shadow: 0 18px 40px rgba(14, 165, 233, 0.18);
+}
+
+.contactGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.25rem;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  border-radius: 24px;
+  padding: 1.35rem 1.4rem;
+  color: #e2e8f0;
+  box-shadow: 0 16px 40px rgba(15, 23, 42, 0.18);
+}
+
+.card h3 {
+  margin-bottom: 0.9rem;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.card p,
+.card a {
+  margin: 0;
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.85;
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: #38bdf8;
+}
+
+@media (max-width: 768px) {
+  .headerRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .contactGrid {
+    grid-template-columns: 1fr;
+  }
+}
